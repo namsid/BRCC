@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" parallel="tests">
+<test name="Test chrome">
+  		<parameter name="node" value="http://192.168.1.102:4444/wd/hub"/>
+	    <parameter name="browser" value="chrome"/>
+<classes>
+      <class name="script.ValidLogin"/>
+      <class name="script.VerifyProductVersion"/>
+      <class name="script.InvalidLogin"/>
+    </classes>
+
+  </test>
+</suite> 
+
+
+
+<test name="Test chrome">
+  		<parameter name="node" value="http://192.168.1.102:4444/wd/hub"/>
+	    <parameter name="browser" value="chrome"/>
+  			<classes>
+      <class name="script.ValidLogin"/>
+      <class name="script.VerifyProductVersion"/>
+      <class name="script.InvalidLogin"/>
+    </classes>
+  </test>

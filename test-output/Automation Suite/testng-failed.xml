@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite]" parallel="tests">
+  <test name="Test firefox(failed)" parallel="tests">
+    <parameter name="node" value="http://192.168.1.102:4444/wd/hub"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="script.VerifyProductVersion">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testProductVersion"/>
+        </methods>
+      </class> <!-- script.VerifyProductVersion -->
+    </classes>
+  </test> <!-- Test firefox(failed) -->
+</suite> <!-- Failed suite [Automation Suite] -->
